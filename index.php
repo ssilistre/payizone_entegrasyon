@@ -40,7 +40,7 @@ function doPayment($token,$name,$number,$month,$year,$cvc2,$price,$redirect,$id,
     exit;
 }
 
-$kkno='5166435208588928';
+$kkno='515151591591519';
 $fiyat=1;
 $ids = md5(uniqid());
 
@@ -49,11 +49,11 @@ if(isset($_POST["odemeyap"])){
     $token=create_token('musteriappid','app_secret');
     $payloadtoken=getPostDetail($token,$kkno,1);
     $token=$payloadtoken;
-    $name='semih silistre';
+    $name='ornek kisi';
     $number=$kkno;
-    $exp_month='03';
-    $exp_year='24';
-    $cvc2='870';
+    $exp_month='04';
+    $exp_year='25';
+    $cvc2='222';
     $price=1;
     $redirect='http://localhost/odeme/callback.php';
     $id=$ids;
